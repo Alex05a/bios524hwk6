@@ -12,7 +12,7 @@
 #'Pythagorian_theorem(a=4,b=3,c=NA)
 
 #' @export
-Pythagorian_theorem <-function(a,b,c){
+Pythagorian_theorem <-function(a=NA,b=NA,c=NA){
   if(!is.na(a)&&!is.na(b)&&is.na(c)&&
      !is.character(a)&&!is.character(b)&&!is.character(c)){
     c<-sqrt(a^2+b^2)
@@ -24,7 +24,7 @@ Pythagorian_theorem <-function(a,b,c){
   (!is.na(c)&&!is.na(a)&&is.na(b)&&
    !is.character(a)&&!is.character(b)&&!is.character(c)){
     b<-sqrt(c^2-a^2)
-    paste("a=" ,b)}else if
+    paste("b=" ,b)}else if
   ( is.na(a)&&is.na(b)|
     is.na(c)&&is.na(a)|
     is.na(b)&&is.na(c)){

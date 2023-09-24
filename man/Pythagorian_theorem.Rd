@@ -4,7 +4,7 @@
 \alias{Pythagorian_theorem}
 \title{Calculate the length of the third side of a right triangle}
 \usage{
-Pythagorian_theorem(a, b, c)
+Pythagorian_theorem(a = NA, b = NA, c = NA)
 }
 \arguments{
 \item{a}{Numeric. Length of one side}
