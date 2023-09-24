@@ -10,13 +10,12 @@
 #'@return Numeric.Trimmed mean of the vector
 #'
 #'@examples
-#'trimmed_mean(10,9,y)
+#'trimmed_mean(10,9,1:30)
 #' @export
 
 # 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
 
-y<-rnorm(50)
-y
+
 trimmed_mean<-function(s, l, y){
   if(length(y)<s+l+1){stop('trimmed_mean does not exist')}
   else{
@@ -25,4 +24,3 @@ trimmed_mean<-function(s, l, y){
     tm=mean(x[(s+1):upper])
     tm}
 }
-trimmed_mean(10,9,y)
